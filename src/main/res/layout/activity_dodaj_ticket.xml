@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DodajTicketActivity">
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="675dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/teIme"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Vnesi ime" />
+
+        <EditText
+            android:id="@+id/teOpis"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Opis" />
+
+        <TextView
+            android:id="@+id/opisPoljaStanj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Izberi trenutno stanje vaše naloge." />
+
+        <Spinner
+            android:id="@+id/spinner_stanje"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="16dp" />
+
+        <EditText
+            android:id="@+id/teIdUporabnika"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="ID Uporabnika" />
+
+        <EditText
+            android:id="@+id/teIdProjekta"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="ID Projekta" />
+
+        <EditText
+            android:id="@+id/teCas"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Čas izvajanja" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffaa1d"
+            android:onClick="addTicket"
+            android:textColor="@color/black"
+            android:text="Dodaj ticket" />
+
+        <TextView
+            android:id="@+id/stanje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tempus App</string>
+    <string-array name="stanja">
+        <item>Reported</item>
+        <item>Working</item>
+        <item>OnHold</item>
+        <item>Resolved</item>
+    </string-array>
+</resources>

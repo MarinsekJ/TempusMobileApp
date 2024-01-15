@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/uporabniki"
+        android:layout_width="303dp"
+        android:layout_height="465dp"
+        android:layout_marginStart="52dp"
+        android:text="Seznam studentov."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/addTicketActivity"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="608dp"
+        android:background="#ffaa1d"
+        android:onClick="prikaziUporabnike"
+        android:text="Prikaži Uporabnike"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/prikaziUporabnike"
+        android:layout_width="117dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="236dp"
+        android:layout_marginTop="608dp"
+        android:background="#ffaa1d"
+        android:onClick="addTicketActivity"
+        android:text="Dodaj Ticket"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
